@@ -7,6 +7,7 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.loginbdd.DB.DBUserAdapter;
@@ -52,6 +53,7 @@ public class LoginActivity extends Activity
                 {
                     Toast.makeText(LoginActivity.this,e.getMessage(), Toast.LENGTH_LONG).show();
                 }
+
             }
 
         });
