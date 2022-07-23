@@ -12,6 +12,8 @@ import android.widget.Toast;
 
 import com.example.loginbdd.DB.DBUserAdapter;
 
+import org.w3c.dom.Text;
+
 public class LoginActivity extends Activity
 {
     @Override
@@ -22,6 +24,7 @@ public class LoginActivity extends Activity
         final EditText txtUserName = (EditText)findViewById(R.id.txtUsername);
         final EditText txtPassword = (EditText)findViewById(R.id.txtPassword);
         Button btnLogin = (Button)findViewById(R.id.btnLogin);
+        TextView Registrar = findViewById(R.id.txtRegistrar);
         btnLogin.setOnClickListener(new OnClickListener(){
 
             @Override
@@ -56,6 +59,14 @@ public class LoginActivity extends Activity
 
             }
 
+        });
+
+        Registrar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent (LoginActivity.this, RegistroActivity.class);
+                startActivity(intent);
+            }
         });
     }
 }

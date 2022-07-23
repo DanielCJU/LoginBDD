@@ -52,6 +52,9 @@ public class PassActivity extends AppCompatActivity {
                     if(!dbUser.PassExists(Upass, UID)){
                         dbUser.AddPass(UID, Upass);
                         Toast.makeText(PassActivity.this,"Contraseña añadida", Toast.LENGTH_LONG).show();
+                        Intent intent = getIntent();
+                        finish();
+                        startActivity(intent);
                     } else  {
                         Toast.makeText(PassActivity.this,"Contraseña ya existe ", Toast.LENGTH_LONG).show();
                     }

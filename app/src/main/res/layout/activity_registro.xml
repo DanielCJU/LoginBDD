@@ -38,7 +38,7 @@
         android:paddingTop="10dp"
         android:paddingRight="10dp"
         android:paddingBottom="10dp"
-        android:text="Usuario"
+        android:hint="Usuario"
         android:textColor="@color/white"
         android:textColorHint="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
@@ -46,33 +46,10 @@
         app:layout_constraintTop_toBottomOf="@+id/logReg" />
 
     <EditText
-        android:id="@+id/emailReg"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="32dp"
-        android:background="@drawable/input_bg"
-        android:drawableLeft="@drawable/ic_email"
-        android:drawablePadding="10dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:paddingLeft="20dp"
-        android:paddingTop="10dp"
-        android:paddingRight="10dp"
-        android:paddingBottom="10dp"
-        android:text="Email"
-        android:textColor="@color/white"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/usuarioReg" />
-
-    <EditText
         android:id="@+id/contraseReg"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="16dp"
         android:layout_marginEnd="32dp"
         android:background="@drawable/input_bg"
         android:drawableLeft="@drawable/ic_security"
@@ -83,11 +60,12 @@
         android:paddingTop="10dp"
         android:paddingRight="10dp"
         android:paddingBottom="10dp"
-        android:text="Contraseña"
+        android:hint="Contraseña"
         android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/emailReg" />
+        tools:layout_editor_absoluteY="278dp" />
 
     <EditText
         android:id="@+id/confirmContraseReg"
@@ -105,7 +83,7 @@
         android:paddingTop="10dp"
         android:paddingRight="10dp"
         android:paddingBottom="10dp"
-        android:text="Repita contraseña"
+        android:hint="Repita contraseña"
         android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
